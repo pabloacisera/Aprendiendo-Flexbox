@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: rgb(240, 240, 164);
+    height: 100%;
+}
+
+div{
+    background-color: brown;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    height: 10rem;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h4{
+    display: flex;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+    
+}
+
+ul{
+    display: flex;
+    background-color: lightgray;
+    list-style: none;
+    margin:0;
+    padding:0;
+    justify-content: flex-end;
+}
+
+li{
+    color:black;
+    padding: .3rem .7rem;
+    font-family: monospace; 
+    font-size: 1.3rem;
+}
+
+li:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+
+/*utilizaremos querys para establecer cada uno de las configuracion conforme el dispositivo en el que se lo este ejecutando*/
+
+@media (width <1024px){
+    li{
+        flex-grow: 1;
+    }
+}
+
+@media (width < 480px){
+    ul{
+        flex-direction: column;
+    }
+}

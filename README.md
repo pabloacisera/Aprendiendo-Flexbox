@@ -91,7 +91,108 @@ Hasta ahora vemos como mover elementos por el eje x u eje horizontal pero si nec
 Debemos recordar que para que esta propiedad se aplique correctamente el box debe ser mas grande que su children.
 
 flex-end o flex-start;
-![alt text](image-15.png) ![alt text](image-16.png)
+
+
+![alt text](image-15.png) 
+![alt text](image-16.png)
+
+Utilizando las dos herramientas anteriormente mencionada logramos centrar un div dentro su box. 
+
+.practica1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+![alt text](image-17.png)
+
+Baseline: la linea base de la fuente esta alineada, aunque puede hacerse por su parte superior o inferior con first baseline o last baseline.
+
+Si aplicamos el siguiente cambio a un elemento veremos la diferencia.
+
+last baseline:
+
+![alt text](image-18.png)
+
+Si tenemos muchos elementos de tal manera que debemos utilizar el wrap para lanzarlo a la linea siguiente, podemos perdirle que a su vez ocupen el total del tamaño del box, y lo vemos con space-between donde los espacio no son entre elementos sino entre filas.
+
+.practica1{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+
+}
+
+![alt text](image-19.png)
+
+Asi mismo podemos utilizar los otros dos spaces- o strecht para no tener espacios residuales.
+
+
+Si debemos darle espacio entre los elementos lo hacemos con el metodo gap (row o column o simplemente gap)
+
+![alt text](image-20.png)
+
+PERDIDA DE DATOS EN LOS ESTILOS.
+
+Se da cuando el box termina siendo mas chico que el children.
+
+![alt text](image-21.png)
+
+Vemos como el ancord esta fuera del contenido blanco. si pretenderiamos utilizar align-content para centra la informacion se comeria una parte del contendio. Para solucionarlmo utilizmos safe center.
+
+PROPIEDADES QUE PUEDEN TOMAR LOS CHILDREN...
+
+Si quisieramos que el quinto elemento este en orden 1:
+.practica-1:nth-child(5){
+  order: -3;
+}
+
+![alt text](image-22.png)
+
+Si no queremos que quede espacio residual alguno entre los hijos, utilizamos flex-grow
+
+.practica-1:nth-child(3){
+  flex-grow: 1;
+}
+
+![alt text](image-23.png)
+
+IMPORTANTE:
+La propiedad flex-basis es muy util a la hora del diseño responsible dado que su tamaño se define antes de que se ocupe el espacio residual por ende cualquier alterior en el ancho o alto hara que se modifique el elemento para acomodarse a los parametros establecidos.
+
+Por otro lado si estamos  a sacrificar a un elemento en pos de que otros mantegan su espacio deberiamos hacer lo siguiente:
+si tenemos 3 hijos y queremos que el del medio se encoja y los otro dos no.
+.practica-1{
+  flex-grow: 1;
+   flex-shrink: 0;
+}
+.practica-1:nth-child(2){
+  flex-shrink: 1;
+}
+
+![alt text](image-24.png)
+
+Si utilizamos simplemente flex y le damos tres valores se aplicaria cada valor en el siguiente orden, primero a grow, segundo a basis y tercero a shrink. Ej: flex: 1, 2 ,3
+
+DISEÑO RESPONSIVE.
+
+![alt text](image-25.png)
+
+Por debajo de 480px:
+
+![alt text](image-26.png)
+
+por debajo de 1024px:
+
+![alt text](image-27.png)
+
+por encima de 1024px:
+
+![alt text](image-28.png)
+
+
+
+
 
 
 

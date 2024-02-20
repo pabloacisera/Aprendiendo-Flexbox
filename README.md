@@ -1,7 +1,9 @@
 # Aprendiendo-Flexbox
-/***PARA VER IMAGENES CTRL + click***//
+HTML:
+![alt text](image-12.png)
+
 Sobre FLEXBOX:
-configuracion inicial:
+configuracion inicial CSS:
 *{
   margin:0;
   padding:0;
@@ -73,7 +75,10 @@ space-evenly: igual al anterior pero le quita las medidas padding para que la di
 => ![alt text](image-11.png);
 
 Como podemos solucionar el problema de tener demasiados elementos en la misma linea:
-Recordemos que por defecto el viewport tiene un ancho determinado, si excedemos dicho ancho con elementos se creara automaticamente una barra de desplazamiento. Si queremos evitar la aparicion de dicha barra podemos decirle que cada vez que un elemento exceda el ancho maximo se enviara los excedentes a la linea siguiente. Para poder mostrar mejor 
+Recordemos que por defecto el viewport tiene un ancho determinado, si excedemos dicho ancho con elementos se creara automaticamente una barra de desplazamiento. Si queremos evitar la aparicion de dicha barra podemos decirle que cada vez que un elemento exceda el ancho maximo se enviara los excedentes a la linea siguiente. 
+A los fines practicos agregaremos mas elementos al html inicial.
+
+
 
 
 

@@ -1,0 +1,44 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  background-color: black;
+  font-family: sans-serif;
+}
+
+/*PRIMER EJERCICIO*/
+header{
+  background-color: cadetblue;
+}
+
+h1{
+  font-family: monospace;
+  text-align: center;
+}
+
+.practica1{/*ul*/
+ background-color: white;
+}
+
+.practica-1{/*li*/
+  background-color: chocolate;
+  color:white;
+  border: dashed black;
+  padding:.3rem .7rem;
+}
+
+
+.practica_1{/*a*/
+  text-decoration: none;
+  color:inherit;
+}
+
+.practica1{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+

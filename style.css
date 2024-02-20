@@ -20,6 +20,7 @@ h1{
 
 .practica1{/*ul*/
  background-color: white;
+ height: 5rem;
 }
 
 .practica-1{/*li*/
@@ -37,7 +38,7 @@ h1{
 
 .practica1{
   display: flex;
-  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 

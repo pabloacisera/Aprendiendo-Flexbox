@@ -77,9 +77,21 @@ space-evenly: igual al anterior pero le quita las medidas padding para que la di
 Como podemos solucionar el problema de tener demasiados elementos en la misma linea:
 Recordemos que por defecto el viewport tiene un ancho determinado, si excedemos dicho ancho con elementos se creara automaticamente una barra de desplazamiento. Si queremos evitar la aparicion de dicha barra podemos decirle que cada vez que un elemento exceda el ancho maximo se enviara los excedentes a la linea siguiente. 
 A los fines practicos agregaremos mas elementos al html inicial.
+La propiedad que debieramos utilizar para evitar lo anteriormente mencionado es flex-grap, cuya configuracion por defecto es nowrap, y se pasaria wrap.
 
+=>![alt text](image-13.png)
 
+Por su parte grap-reverse modificaria el orden en el que lanza los componentes.
 
+Podemos conbinar el flex-direction con el flex-wrap, utilizando flex-flow, al cual se le pasan dos valores, por ejemplo column para la direccion y ademas wrap para que lanze el li a la siguiente linea.
+
+=>![alt text](image-14.png)
+
+Hasta ahora vemos como mover elementos por el eje x u eje horizontal pero si necesitamos mover elementos por eje y o eje vertical utilizamos align-items.
+Debemos recordar que para que esta propiedad se aplique correctamente el box debe ser mas grande que su children.
+
+flex-end o flex-start;
+![alt text](image-15.png) ![alt text](image-16.png)
 
 
 
